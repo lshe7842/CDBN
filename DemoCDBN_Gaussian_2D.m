@@ -37,7 +37,7 @@ layer{1}.learning_rate  = 0.05;
 layer{1}.sparsity       = 0.03;
 layer{1}.lambda1        = 5;
 layer{1}.lambda2        = 0.05;
-layer{1}.whiten         = 1;
+layer{1}.whiten         = 0;
 layer{1}.type_input     = 'Gaussian'; % OR 'Gaussian' 'Binary'
 
 % SECOND LAYER SETTING
@@ -54,7 +54,7 @@ layer{2}.learning_rate  = 0.05;
 layer{2}.sparsity       = 0.02;
 layer{2}.lambda1        = 5;
 layer{2}.lambda2        = 0.05;
-layer{2}.whiten         = 1;
+layer{2}.whiten         = 0;
 layer{2}.type_input     = 'Gaussian';
 
 % THIRD LAYER SETTING ...   % YOU CAN CONTINUE TO SET THE THIRD, FOURTH,

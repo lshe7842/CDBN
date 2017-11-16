@@ -7,7 +7,9 @@ function model = crbm_inference2D(model,layer,data)
 
 model.h_input = zeros(size(model.h_input));
 N = size(model.h_input,4);
+% For each image
 for k = 1:N
+    % For each hidden feature map
     for i = 1 : layer.n_map_h
         for j = 1 : layer.n_map_v
             model.h_input(:,:,i,k) = model.h_input(:,:,i,k) + conv2(data(:,:,j,k),model.W(end:-1:1,end:-1:1,j,i),'valid');

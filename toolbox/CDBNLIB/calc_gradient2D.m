@@ -14,6 +14,7 @@ function [model,dW] = calc_gradient2D(model,layer,data)
 %% --------------------------------GIBBS SAMPLES -----------------------------%%
 
 % CRBM INFERENCE
+% SL - Sample the hidden layer units initially
 model = crbm_inference2D(model,layer,data);
 %[model.h_sample, model.h_state] = crbm_inference2D_mex(model,layer,data); 
 
